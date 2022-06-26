@@ -1,11 +1,17 @@
-# Image-Transformation
-## Aim
+## EX.NO: 05 <br>
+## DATE: 30-04-2022
+## <p align="center">IMAGE TRANSFORMATION</p>
+
+## Aim:
+
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
 ## Software Required:
+
 Anaconda - Python 3.7
 
 ## Algorithm:
+
 ### Step1:
 Import the required libraries and image for transformation.
 
@@ -22,10 +28,11 @@ Plot the Image and Transformed Image on the graph using matplotlib for identifyi
 Diifferent operations has been performed on the image.
 
 ## Program:
-### Developed By: Pabbarthi Chetan Sathish Kumar
+
+### Developed By: P S Chetan
 ### Register Number: 212220230033
 
-## i)Image Translation
+### i)Image Translation
 ```python
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -48,7 +55,7 @@ plt.axis("off")
 plt.imshow(translated_image)
 plt.show()
 ```
-## ii) Image Scaling
+### ii) Image Scaling
 ```python
 #SCALING 
 rows,cols,dim = image.shape
@@ -63,7 +70,7 @@ plt.imshow(scale_image)
 plt.show()
 ```
 
-## iii)Image shearing
+### iii)Image shearing
 ```python
 #shearing image 
 M_x = np.float32([[1,1,0], [0,1,0],[0,0,1]])
@@ -87,7 +94,7 @@ plt.imshow(shear_imagey)
 plt.show()
 ```
 
-## iv)Image Reflection
+### iv)Image Reflection
 ```python
 #reflect an image 
 M_x = np.float32([[1,0,0],[0,-1,rows],[0,0,1]])
@@ -108,7 +115,7 @@ plt.imshow(ref_imagey)
 plt.show()
 ```
 
-## v)Image Rotation
+### v)Image Rotation
 ```python
 angle=np.radians(10)
 matrix=np.float32([[np.cos(angle),-np.sin(angle),0],
@@ -119,7 +126,7 @@ plt.axis("off")
 plt.imshow(Rotated_image)
 ```
 
-## vi)Image Cropping
+### vi)Image Cropping
 ```python
 # cropping 
     
